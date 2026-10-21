@@ -1,0 +1,48 @@
+/* =========================================================
+   PRETTY AURA – THEME (Design tokens)
+   ---------------------------------------------------------
+   Poori website ke colors, font, shadows aur corners yahin se aate hain.
+   Color badalna ho to sirf yahan value badlo – har jagah apne aap badal jaayega.
+   Tailwind mein use:  bg-primary, text-ink, border-line, rounded-card, shadow-soft ...
+   ========================================================= */
+
+@theme {
+  /* ---------- Font ---------- */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* ---------- Brand colors (logo se) ---------- */
+  --color-primary: #D6246E;        /* Rose pink  – buttons, links, price */
+  --color-primary-dark: #B21A5A;   /* hover state */
+  --color-primary-light: #F4A7BB;  /* butterfly pink – highlights */
+  --color-blush: #FDEEF1;          /* soft pink background */
+  --color-blush-deep: #F9DCE5;     /* thoda gehra blush */
+  --color-gold: #C9A24A;           /* crown + ring gold */
+  --color-gold-dark: #A9832F;
+  --color-gold-light: #F1E3C2;
+  --color-ink: #2B1A17;            /* espresso – headings, text */
+  --color-ink-soft: #57433F;       /* body text */
+  --color-muted: #7A6560;          /* small meta text */
+  --color-line: #F0DDE3;           /* borders */
+  --color-cream: #FFFAF8;          /* page section background */
+  --color-wine: #5C1A33;           /* hero banner panel (deep rose) */
+  --color-success: #1F8A5B;
+  --color-whatsapp: #25D366;
+
+  /* ---------- Corners ---------- */
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-card: 0 1px 2px rgb(43 26 23 / 0.04), 0 6px 18px -8px rgb(43 26 23 / 0.10);
+  --shadow-soft: 0 18px 40px -18px rgb(214 36 110 / 0.35);
+  --shadow-lift: 0 22px 44px -20px rgb(43 26 23 / 0.28);
+
+  /* ---------- Animations ---------- */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}

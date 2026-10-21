@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /cart
+Disallow: /wishlist
+Disallow: /checkout
+Disallow: /account
+
+Sitemap: https://prettyaura.in/sitemap.xml
